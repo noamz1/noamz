@@ -3,7 +3,7 @@ $port = 8000
 while ($true) {
     do {
         try {
-            #Write-Host "Trying to reach "$address":"$port
+            Write-Host "Trying to reach "$address":"$port
             $client = New-Object System.Net.Sockets.TcpClient($address, $port)  
             $stream = $client.GetStream()
             $writer = New-Object System.IO.StreamWriter($stream)
