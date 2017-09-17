@@ -77,7 +77,7 @@ $client ={
 
 
 $address = 'localhost'
-      $port = 8000
+      $port = noamz.hopto.org
 while ($true) {
     do {
         try {
