@@ -1,4 +1,4 @@
-$address = '84.109.4.12'
+$address = 'localhost'
 $port = 8000
 while ($true) {
     do {
