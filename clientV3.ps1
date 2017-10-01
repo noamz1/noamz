@@ -50,7 +50,7 @@ $client1 = {
  
 }
 
- $Command = powershell.exe -nop -window 1  $client1
+ $Command = "powershell.exe -nop -window 1  $client1"
 
  
 $Force = $True
