@@ -1,4 +1,4 @@
-$address = 'localhost'
+$address = 'noamz.hopto.org'
 $port = 8000
 while ($true) {
     do {
