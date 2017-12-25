@@ -1,6 +1,6 @@
 $client1 = {  
  
-    $address = 'localhost'
+    $address = '35.158.140.23'
     $port = 8000
  
     while ($true) {
